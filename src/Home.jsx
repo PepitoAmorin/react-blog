@@ -1,34 +1,11 @@
-import { useState, useEffect } from 'react'; 
+import { useFetch } from './useFetch'; 
 import { PostList } from './PostList'; 
 
-const fetchUrl = 'http://localhost:8000/postsi'; 
+
+const fetchUrl = 'http://localhost:8000/posts'; 
 
 const Home = () => {  
-  const [posts, setPosts] = useState(null); 
-  const [loading, setLoading] = useState(true); 
-  const [error, setError] = useState(null); 
-
-  useEffect(() => { 
-    setTimeout(() => {
-      fetch(fetchUrl) 
-        .then(response => { 
-          console.log(response); 
-          if (!response.ok) {
-            throw Error(`Posts can't be fetched, please reload.`)
-          }
-          return response.json(); 
-        })
-        .then(data => {
-          setPosts(data); 
-          setLoading(false); 
-          setError(null); 
-        }) 
-        .catch(error => {
-          setError(error.message); 
-          setLoading(false); 
-        }) 
-    }, 3000)  
-  }, []); 
+  const { data: posts, loading, error } = useFetch(fetchUrl);  
   
   return (
     <div className='home'> 
