@@ -1,5 +1,6 @@
 {
-  "name": "react-blog",
+  "name": "react-blog", 
+  "homepage": "https://PepitoAmorin.github.io/react-blog/", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,6 +41,5 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }, 
-  "homepage": "https://PepitoAmorin.github.io/react-blog/index.html"
+  }
 }
