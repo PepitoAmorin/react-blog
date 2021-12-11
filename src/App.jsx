@@ -7,7 +7,7 @@ import { FourOhFour } from './404';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/react-blog'>
       <div className="App"> 
         <Navbar />
         <div className="content"> 
