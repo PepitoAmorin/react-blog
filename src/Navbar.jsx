@@ -5,8 +5,8 @@ const Navbar = () => {
     <div className='navbar'> 
       <h1>Blog title</h1>
       <div className="links">
-        <Link to="/react-blog/">Home</Link>
-        <Link to="/react-blog/create/">New post</Link>
+        <Link to="/">Home</Link>
+        <Link to="/create/">New post</Link>
       </div>
       
     </div>

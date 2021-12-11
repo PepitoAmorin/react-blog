@@ -23,7 +23,7 @@ const Create = () => {
       body: JSON.stringify(postObject)
     }).then(() => {
       setPosting(false); 
-      hist.push('/react-blog/'); 
+      hist.push('/'); 
     }) 
   }
 
