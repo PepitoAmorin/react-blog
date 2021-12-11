@@ -12,7 +12,7 @@ const PostDetails = () => {
     fetch(fetchUrl, {
       method: 'DELETE' 
     }).then(() => {
-      hist.push('/'); 
+      hist.push('/react-blog/'); 
     }) 
   } 
   
