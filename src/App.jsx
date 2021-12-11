@@ -21,6 +21,9 @@ function App() {
             <Route exact path='/post/:id'>
               <PostDetails /> 
             </Route>
+            <Route exact path='/react-blog/'>
+              <Home /> 
+            </Route>
             <Route path='*'>
               <FourOhFour />
             </Route>
